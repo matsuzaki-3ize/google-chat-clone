@@ -2,6 +2,34 @@
 Beatify json data from Google Chat. Made by Gabriel Barrientos in 2022.
 Thanks [90hellbaby](https://github.com/90hellbaby) for the support! :D
 
+## Usage
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/...
+```
+
+### 2. Install the dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the program
+
+```bash
+node index.js path/to/Takeout/Google\ Chat/
+```
+
+### Command line arguments
+
+- `path/to/Takeout/Google\ Chat/` is the path to the folder that contains the
+  exported data from Google Chat. It should contain the `Groups` and `Users`
+  folders.
+- `--use-data-url` is an optional argument that will make the program use the
+  `data-url` attribute for the images.
+
 ## Video Demo: https://youtu.be/disgVw-droY
 ## Description
 This project is essentially a beautifier, what it does is it reads a folder
