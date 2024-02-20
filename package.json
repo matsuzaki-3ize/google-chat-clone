@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/pinguin-frosch/google-chat-clone/issues"
   },
-  "homepage": "https://github.com/pinguin-frosch/google-chat-clone#readme"
+  "homepage": "https://github.com/pinguin-frosch/google-chat-clone#readme",
+  "dependencies": {
+    "file-type": "^19.0.0",
+    "mime": "^4.0.1",
+    "minimist": "^1.2.8"
+  }
 }
