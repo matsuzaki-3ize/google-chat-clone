@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Lector de las conversaciones descargadas de google chat tal como se ven en la página",
   "main": "index.js",
+  "bin": "dist/bundle.js",
   "type": "module",
   "scripts": {
+    "pack-exe": "rollup -c && pkg package.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,9 +23,21 @@
     "url": "https://github.com/pinguin-frosch/google-chat-clone/issues"
   },
   "homepage": "https://github.com/pinguin-frosch/google-chat-clone#readme",
+  "pkg": {
+    "scripts": ["dist/bundle.js"],
+    "assets": ["group.html"],
+    "targets": [ "node16-windows-x64" ],
+    "outputPath": "dist"
+  },
   "dependencies": {
     "file-type": "^19.0.0",
     "mime": "^4.0.1",
     "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "pkg": "^5.8.1",
+    "rollup": "^4.12.0"
   }
 }

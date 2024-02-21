@@ -380,7 +380,7 @@ const is_audio = (file) => {
 }
 
 // Read the html template
-const html = fs.readFileSync('group.html', { encoding: 'utf-8' })
+const html = fs.readFileSync(path.join(__dirname, '../group.html'), { encoding: 'utf-8' })
 
 // Replace the title and body with the ones passed as arguments
 const create_html_file = (title, body) => {
